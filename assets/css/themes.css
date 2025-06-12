@@ -1,0 +1,515 @@
+/* assets/css/themes.css */
+/* Comentario: Sistema de Temas Global para Euphonia */
+
+:root {
+  /* --- Fondos --- */
+  --euphonia-bg-primary: #121212;
+  --euphonia-bg-secondary: #1E1E1E;
+  --euphonia-bg-tertiary: #282828;
+  --euphonia-bg-modal-header: #181818;
+  --euphonia-bg-input: #2A2A2A;
+  --euphonia-bg-button: #333333;
+  --euphonia-bg-button-hover: #404040;
+  --euphonia-bg-button-active: #4D4D4D;
+  --euphonia-bg-progress-track: #4A4A4A;
+  --euphonia-bg-progress-buffer: #6A6A6A;
+  --euphonia-top-bar-bg: rgba(18, 18, 18, 0.85);
+  --euphonia-modal-overlay: rgba(0, 0, 0, 0.7);
+
+  /* --- Textos --- */
+  --euphonia-text-primary: #E0E0E0;
+  --euphonia-text-secondary: #A0A0A0;
+  --euphonia-text-title: #FFFFFF;
+  --euphonia-text-button: #E0E0E0;
+  --euphonia-text-input: #E0E0E0;
+  --euphonia-text-link: #61DAFB;
+  --euphonia-text-quality: #00eaff;
+  --euphonia-modal-header-text-color: var(--euphonia-text-title);
+  --euphonia-modal-close-button-color: var(--euphonia-text-secondary); /* Para el botón X del modal */
+  --euphonia-modal-file-input-text-color: var(--euphonia-text-input);
+
+  /* --- Bordes --- */
+  --euphonia-border-primary: #383838;
+  --euphonia-border-cover: #404040;
+  --euphonia-border-input: #4A4A4A;
+  --euphonia-border-modal: #303030;
+  --euphonia-modal-separator-dashed: #4D4D4D;
+
+  /* --- Acentos e Íconos --- */
+  --euphonia-accent-primary: #00CFE8;
+  --euphonia-accent-primary-hover: #00A8BF;
+  --euphonia-accent-primary-transparent: rgba(0, 207, 232, 0.15);
+  --euphonia-accent-text-on-primary: #121212;
+  
+  --euphonia-icon-color-primary: var(--euphonia-text-secondary); /* Color base para íconos */
+  --euphonia-icon-color-hover: var(--euphonia-text-primary);     /* Íconos con hover general */
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);  /* Íconos activos */
+
+  /* --- Sombras --- */
+  --euphonia-shadow-color: rgba(0, 0, 0, 0.5);
+  --euphonia-cover-box-shadow-color: rgba(0, 207, 232, 0.2);
+  --euphonia-shadow-soft: 0 2px 5px var(--euphonia-shadow-color);
+  --euphonia-shadow-medium: 0 4px 10px var(--euphonia-shadow-color);
+  --euphonia-shadow-strong: 0 6px 15px var(--euphonia-shadow-color);
+
+  /* --- Específicos del Reproductor --- */
+  --euphonia-progress-thumb: #FFFFFF;
+  --euphonia-progress-thumb-border: var(--euphonia-bg-primary);
+  --euphonia-background-blur-brightness: 0.35;
+
+  /* --- Botón Seguir Específico --- */
+  --euphonia-button-follow-bg: rgba(224, 224, 224, 0.1);
+  --euphonia-button-follow-border: rgba(224, 224, 224, 0.2);
+  --euphonia-button-follow-hover-bg: rgba(224, 224, 224, 0.2);
+  --euphonia-button-follow-text-color: var(--euphonia-text-primary);
+
+  /* --- Input File Selector Button --- */
+  --euphonia-input-file-selector-button-bg: var(--euphonia-bg-button);
+  --euphonia-input-file-selector-button-text: var(--euphonia-text-button);
+  --euphonia-input-file-selector-button-border: var(--euphonia-border-primary);
+  --euphonia-input-file-selector-button-hover-bg: var(--euphonia-bg-button-hover);
+
+  /* --- Theme Switcher UI itself --- */
+  --euphonia-theme-button-bg: var(--euphonia-bg-tertiary);
+  --euphonia-theme-button-text: var(--euphonia-text-primary); /* Usado para el color del ícono del tema */
+  --euphonia-theme-panel-bg: var(--euphonia-bg-secondary);
+  --euphonia-theme-option-hover-bg: var(--euphonia-bg-tertiary);
+}
+
+/* ------- TEMA 1: Euphonia Oscuro (Predeterminado) ------- */
+.theme-id-1 { /* Ya definido en :root */ }
+
+
+/* ============================= */
+/* === TEMA CLARO ESTILO APPLE === */
+/* ============================= */
+
+.theme-id-2 {
+/* --- Fondos --- */
+--euphonia-bg-primary: #FFFFFF;
+--euphonia-bg-secondary: #F5F5F7;
+--euphonia-bg-tertiary: #EAEAED;
+--euphonia-bg-modal-header: #F2F2F2;
+--euphonia-bg-input: #F0F0F0;
+--euphonia-bg-button: #E5E5EA;
+--euphonia-bg-button-hover: #DADADA;
+--euphonia-bg-button-active: #CFCFD1;
+--euphonia-bg-progress-track: #D0D0D5;
+--euphonia-bg-progress-buffer: #BEBEC3;
+--euphonia-top-bar-bg: rgba(255, 255, 255, 0.85);
+--euphonia-modal-overlay: rgba(0, 0, 0, 0.2);
+
+/* --- Textos --- */
+--euphonia-text-primary: #1D1D1F;
+--euphonia-text-secondary: #6E6E73;
+--euphonia-text-title: #000000;
+--euphonia-text-button: #1D1D1F;
+--euphonia-text-input: #1D1D1F;
+--euphonia-text-link: #007AFF; /* Azul iOS clásico */
+--euphonia-text-quality: #0A84FF; /* Azul vibrante */
+--euphonia-modal-header-text-color: var(--euphonia-text-title);
+--euphonia-modal-close-button-color: var(--euphonia-text-secondary);
+--euphonia-modal-file-input-text-color: var(--euphonia-text-input);
+
+/* --- Bordes --- */
+--euphonia-border-primary: #DADADA;
+--euphonia-border-cover: #E5E5EA;
+--euphonia-border-input: #D1D1D6;
+--euphonia-border-modal: #C7C7CC;
+--euphonia-modal-separator-dashed: #D1D1D6;
+
+/* --- Acentos e Íconos --- */
+--euphonia-accent-primary: #0A84FF; /* Azul Apple */
+--euphonia-accent-primary-hover: #0060DF;
+--euphonia-accent-primary-transparent: rgba(10, 132, 255, 0.1);
+--euphonia-accent-text-on-primary: #FFFFFF;
+
+--euphonia-icon-color-primary: var(--euphonia-text-secondary);
+--euphonia-icon-color-hover: var(--euphonia-text-primary);
+--euphonia-icon-color-active: var(--euphonia-accent-primary);
+
+/* --- Sombras --- */
+--euphonia-shadow-color: rgba(0, 0, 0, 0.1);
+--euphonia-cover-box-shadow-color: rgba(10, 132, 255, 0.1);
+--euphonia-shadow-soft: 0 1px 3px var(--euphonia-shadow-color);
+--euphonia-shadow-medium: 0 2px 5px var(--euphonia-shadow-color);
+--euphonia-shadow-strong: 0 4px 10px var(--euphonia-shadow-color);
+
+/* --- Específicos del Reproductor --- */
+--euphonia-progress-thumb: #000000;
+--euphonia-progress-thumb-border: var(--euphonia-bg-primary);
+--euphonia-background-blur-brightness: 0.9;
+
+/* --- Botón Seguir Específico --- */
+--euphonia-button-follow-bg: rgba(0, 0, 0, 0.05);
+--euphonia-button-follow-border: rgba(0, 0, 0, 0.08);
+--euphonia-button-follow-hover-bg: rgba(0, 0, 0, 0.1);
+--euphonia-button-follow-text-color: var(--euphonia-text-primary);
+
+/* --- Input File Selector Button --- */
+--euphonia-input-file-selector-button-bg: var(--euphonia-bg-button);
+--euphonia-input-file-selector-button-text: var(--euphonia-text-button);
+--euphonia-input-file-selector-button-border: var(--euphonia-border-primary);
+--euphonia-input-file-selector-button-hover-bg: var(--euphonia-bg-button-hover);
+
+/* --- Theme Switcher UI itself --- */
+--euphonia-theme-button-bg: var(--euphonia-bg-tertiary);
+--euphonia-theme-button-text: var(--euphonia-text-primary);
+--euphonia-theme-panel-bg: var(--euphonia-bg-secondary);
+--euphonia-theme-option-hover-bg: var(--euphonia-bg-tertiary);
+}
+
+
+/* ========================================================================== */
+/* ------- TEMA 3: Océano Profundo ------- */
+/* ========================================================================== */
+.theme-id-3 {
+  --euphonia-bg-primary: #0A192F;    /* Azul naval muy oscuro */
+  --euphonia-bg-secondary: #0F2A4B;  /* Azul oscuro intermedio */
+  --euphonia-bg-tertiary: #173A64;   /* Azul más claro para elementos destacados */
+  --euphonia-bg-modal-header: #081424;
+  --euphonia-bg-input: #173A64;
+  --euphonia-bg-button: #1E487C;
+  --euphonia-bg-button-hover: #255892;
+  --euphonia-bg-button-active: #2C69AA;
+  --euphonia-bg-progress-track: #173A64;
+  --euphonia-top-bar-bg: rgba(10, 25, 47, 0.85);
+  --euphonia-modal-overlay: rgba(0, 0, 0, 0.7);
+
+  --euphonia-text-primary: #CCD6F6;   /* Texto claro casi blanco, tinte azulado */
+  --euphonia-text-secondary: #A8B2D1; /* Gris azulado más claro */
+  --euphonia-text-title: #E6F1FF;     /* Títulos más brillantes */
+  --euphonia-text-button: #CCD6F6;
+  --euphonia-text-input: #CCD6F6;
+  --euphonia-text-link: #64FFDA;      /* Verde menta neón para contraste */
+  --euphonia-text-quality: #64FFDA;
+
+  --euphonia-border-primary: #2A4A75;
+  --euphonia-border-cover: #3A5A85;
+  --euphonia-border-input: #2A4A75;
+  --euphonia-border-modal: #1E487C;
+  --euphonia-modal-separator-dashed: #2A4A75;
+
+  --euphonia-accent-primary: #64FFDA; /* Verde menta neón */
+  --euphonia-accent-primary-hover: #52D8BC;
+  --euphonia-accent-primary-transparent: rgba(100, 255, 218, 0.1);
+  --euphonia-accent-text-on-primary: #0A192F; /* Texto oscuro sobre acento brillante */
+  
+  --euphonia-icon-color-primary: var(--euphonia-text-secondary);
+  --euphonia-icon-color-hover: var(--euphonia-text-primary);
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);
+
+  --euphonia-shadow-color: rgba(2, 12, 27, 0.7); /* Sombra muy oscura */
+  --euphonia-cover-box-shadow-color: rgba(100, 255, 218, 0.15);
+  
+  --euphonia-progress-thumb: #64FFDA;
+  --euphonia-progress-thumb-border: var(--euphonia-bg-primary);
+  --euphonia-background-blur-brightness: 0.3;
+
+  --euphonia-button-follow-bg: rgba(100, 255, 218, 0.08);
+  --euphonia-button-follow-border: rgba(100, 255, 218, 0.15);
+  --euphonia-button-follow-hover-bg: rgba(100, 255, 218, 0.15);
+  --euphonia-button-follow-text-color: var(--euphonia-text-primary);
+}
+
+/* ========================================================================== */
+/* ------- TEMA 4: Atardecer Dorado ------- */
+/* ========================================================================== */
+.theme-id-4 {
+  --euphonia-bg-primary: #2C1B0B;    /* Marrón muy oscuro, casi negro */
+  --euphonia-bg-secondary: #402A12;  /* Marrón oscuro */
+  --euphonia-bg-tertiary: #5E3D1B;
+  --euphonia-bg-modal-header: #201305;
+  --euphonia-bg-input: #5E3D1B;
+  --euphonia-bg-button: #7A5024;
+  --euphonia-bg-button-hover: #96632D;
+  --euphonia-bg-progress-track: #5E3D1B;
+  --euphonia-top-bar-bg: rgba(44, 27, 11, 0.85);
+
+  --euphonia-text-primary: #FFDAB9;   /* Peach claro */
+  --euphonia-text-secondary: #F4A460; /* Sandy Brown */
+  --euphonia-text-title: #FFFFFF;
+  --euphonia-text-button: #FFDAB9;
+  --euphonia-text-link: #FFA500;      /* Naranja */
+  --euphonia-text-quality: #FFC107;   /* Ámbar */
+
+  --euphonia-border-primary: #5E3D1B;
+  --euphonia-border-cover: #7A5024;
+  --euphonia-border-input: #5E3D1B;
+
+  --euphonia-accent-primary: #FFC107; /* Ámbar */
+  --euphonia-accent-primary-hover: #FFB300;
+  --euphonia-accent-primary-transparent: rgba(255, 193, 7, 0.15);
+  --euphonia-accent-text-on-primary: #2C1B0B;
+  
+  --euphonia-icon-color-primary: var(--euphonia-text-secondary);
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);
+
+  --euphonia-shadow-color: rgba(30, 20, 10, 0.6);
+  --euphonia-cover-box-shadow-color: rgba(255, 193, 7, 0.2);
+  
+  --euphonia-progress-thumb: #FFC107;
+  --euphonia-background-blur-brightness: 0.4;
+}
+
+/* ========================================================================== */
+/* ------- TEMA 5: Bosque Esmeralda ------- */
+/* ========================================================================== */
+.theme-id-5 {
+  /* --- Fondos --- */
+--euphonia-bg-primary: #1A2A1A;    /* Verde muy oscuro */
+--euphonia-bg-secondary: #2A4B2A;  /* Verde oscuro */
+--euphonia-bg-tertiary: #3E623E;
+--euphonia-bg-modal-header: #3E623E;
+--euphonia-bg-input: #3E623E;
+--euphonia-bg-button: #4CAF50;     /* Verde material */
+--euphonia-bg-button-hover: #3E8E41;
+--euphonia-bg-button-active: #3E623E;
+--euphonia-bg-progress-track: #2A4B2A;
+--euphonia-bg-progress-buffer: #1A2A1A;
+--euphonia-top-bar-bg: rgba(26, 42, 26, 0.85);
+--euphonia-modal-overlay: rgba(0, 0, 0, 0.4);
+
+/* --- Textos --- */
+--euphonia-text-primary: #E8F5E9;   /* Verde muy pálido */
+--euphonia-text-secondary: #A5D6A7; /* Verde pálido */
+--euphonia-text-title: #FFFFFF;
+--euphonia-text-button: #1A2A1A;
+--euphonia-text-input: #E8F5E9;
+--euphonia-text-link: #81C784;      /* Verde más claro como acento */
+--euphonia-text-quality: #C8E6C9;
+--euphonia-modal-header-text-color: var(--euphonia-text-title);
+--euphonia-modal-close-button-color: var(--euphonia-text-secondary);
+--euphonia-modal-file-input-text-color: var(--euphonia-text-input);
+
+/* --- Bordes --- */
+--euphonia-border-primary: #3E623E;
+--euphonia-border-cover: #4CAF50;
+--euphonia-border-input: #2A4B2A;
+--euphonia-border-modal: #1A2A1A;
+--euphonia-modal-separator-dashed: #2A4B2A;
+
+/* --- Acentos e Íconos --- */
+--euphonia-accent-primary: #81C784; /* Verde más claro como acento */
+--euphonia-accent-primary-hover: #4CAF50;
+--euphonia-accent-primary-transparent: rgba(129, 199, 132, 0.1);
+--euphonia-accent-text-on-primary: #1A2A1A;
+
+--euphonia-icon-color-primary: var(--euphonia-text-secondary);
+--euphonia-icon-color-hover: var(--euphonia-text-primary);
+--euphonia-icon-color-active: var(--euphonia-accent-primary);
+
+/* --- Sombras --- */
+--euphonia-shadow-color: rgba(0, 0, 0, 0.3);
+--euphonia-cover-box-shadow-color: rgba(129, 199, 132, 0.2);
+--euphonia-shadow-soft: 0 1px 3px var(--euphonia-shadow-color);
+--euphonia-shadow-medium: 0 2px 5px var(--euphonia-shadow-color);
+--euphonia-shadow-strong: 0 4px 10px var(--euphonia-shadow-color);
+
+/* --- Específicos del Reproductor --- */
+--euphonia-progress-thumb: #FFFFFF;
+--euphonia-progress-thumb-border: var(--euphonia-bg-primary);
+--euphonia-background-blur-brightness: 0.3;
+
+/* --- Botón Seguir Específico --- */
+--euphonia-button-follow-bg: rgba(26, 42, 26, 0.3);
+--euphonia-button-follow-border: rgba(26, 42, 26, 0.5);
+--euphonia-button-follow-hover-bg: rgba(26, 42, 26, 0.5);
+--euphonia-button-follow-text-color: var(--euphonia-text-primary);
+
+/* --- Input File Selector Button --- */
+--euphonia-input-file-selector-button-bg: var(--euphonia-bg-button);
+--euphonia-input-file-selector-button-text: var(--euphonia-text-button);
+--euphonia-input-file-selector-button-border: var(--euphonia-border-primary);
+--euphonia-input-file-selector-button-hover-bg: var(--euphonia-bg-button-hover);
+
+/* --- Theme Switcher UI itself --- */
+--euphonia-theme-button-bg: var(--euphonia-bg-tertiary);
+--euphonia-theme-button-text: var(--euphonia-text-primary);
+--euphonia-theme-panel-bg: var(--euphonia-bg-secondary);
+--euphonia-theme-option-hover-bg: var(--euphonia-bg-tertiary);
+  /* ... (completa las demás variables para este tema) ... */
+}
+
+/* ========================================================================== */
+/* ------- TEMA 6: Amatista Neón ------- */
+/* ========================================================================== */
+.theme-id-6 {
+  --euphonia-bg-primary: #1C0B2B;    /* Púrpura muy oscuro */
+  --euphonia-bg-secondary: #30174A;  /* Púrpura oscuro */
+  --euphonia-bg-tertiary: #4A236A;
+  --euphonia-bg-input: #4A236A;
+  --euphonia-bg-button: #6A359C;
+  --euphonia-bg-button-hover: #53297B;
+  --euphonia-text-primary: #E1BEE7;   /* Lila pálido */
+  --euphonia-text-secondary: #CE93D8; /* Lila */
+  --euphonia-text-title: #FFFFFF;
+  --euphonia-accent-primary: #F06292; /* Rosa neón */
+  --euphonia-accent-text-on-primary: #1C0B2B;
+  --euphonia-text-quality: #F06292;
+  --euphonia-border-primary: #4A236A;
+  --euphonia-border-cover: #6A359C;
+  --euphonia-progress-thumb: #F06292;
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);
+  --euphonia-background-blur-brightness: 0.35;
+  /* ... (completa las demás variables para este tema) ... */
+}
+
+/* ========================================================================== */
+/* ------- TEMA 7: Gris Minimalista (Claro) ------- */
+/* ========================================================================== */
+.theme-id-7 {
+  --euphonia-bg-primary: #E0E0E0;    /* Gris claro */
+  --euphonia-bg-secondary: #F5F5F5;  /* Casi blanco */
+  --euphonia-bg-tertiary: #D6D6D6;
+  --euphonia-bg-input: #F5F5F5;
+  --euphonia-bg-button: #C0C0C0;
+  --euphonia-bg-button-hover: #B0B0B0;
+  --euphonia-text-primary: #333333;   /* Texto oscuro */
+  --euphonia-text-secondary: #777777; /* Texto gris medio */
+  --euphonia-text-title: #000000;
+  --euphonia-accent-primary: #757575; /* Gris oscuro como acento */
+  --euphonia-accent-text-on-primary: #FFFFFF;
+  --euphonia-text-quality: #555555;
+  --euphonia-border-primary: #C0C0C0;
+  --euphonia-border-cover: #B0B0B0;
+  --euphonia-progress-thumb: #333333;
+  --euphonia-icon-color-primary: var(--euphonia-text-secondary);
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);
+  --euphonia-background-blur-brightness: 0.9;
+  /* ... (completa las demás variables para este tema) ... */
+}
+
+/* ========================================================================== */
+/* ------- TEMA 8: Cereza Medianoche ------- */
+/* ========================================================================== */
+.theme-id-8 {
+  --euphonia-bg-primary: #1A0000;    /* Casi negro, tinte rojo */
+  --euphonia-bg-secondary: #2A0808;  /* Rojo muy oscuro */
+  --euphonia-bg-tertiary: #401010;
+  --euphonia-bg-input: #401010;
+  --euphonia-bg-button: #601818;
+  --euphonia-bg-button-hover: #7A2020;
+  --euphonia-text-primary: #FFCDD2;   /* Rojo muy pálido */
+  --euphonia-text-secondary: #E57373; /* Rojo claro */
+  --euphonia-text-title: #FFFFFF;
+  --euphonia-accent-primary: #D32F2F; /* Rojo material oscuro */
+  --euphonia-accent-text-on-primary: #FFFFFF;
+  --euphonia-text-quality: #EF5350;
+  --euphonia-border-primary: #401010;
+  --euphonia-border-cover: #601818;
+  --euphonia-progress-thumb: #D32F2F;
+  --euphonia-icon-color-active: var(--euphonia-accent-primary);
+  --euphonia-background-blur-brightness: 0.3;
+  /* ... (completa las demás variables para este tema) ... */
+}
+ 
+
+/* ================================ */
+/* == CONTENEDOR Y BOTÓN ROTADO == */
+/* ================================ */
+.theme-switcher-container {
+  position: fixed;
+  top: 14rem;
+  left: 1.5rem;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.theme-button.rotated {
+  transform: rotate(-90deg);
+  transform-origin: left;
+  background-color: var(--euphonia-theme-button-bg);
+  color: var(--euphonia-theme-button-text);
+  border: 1px solid var(--euphonia-border-primary);
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  box-shadow: var(--euphonia-shadow-soft);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-button.rotated:hover {
+  background-color: var(--euphonia-bg-button-hover);
+}
+
+.theme-button.rotated .icon-mask {
+  width: 18px;
+  height: 18px;
+  background-color: var(--euphonia-theme-button-text);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* =============================== */
+/* == PANEL DE SELECCIÓN DE TEMA == */
+/* =============================== */
+.theme-selection-panel {
+  display: none;
+  flex-direction: column;     /* 🔁 UNA SOLA COLUMNA */
+  align-items: flex-start;
+  gap: 8px;
+  background-color: var(--euphonia-theme-panel-bg);
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border-radius: 10px;
+  width: 30px;
+  position: absolute;
+  top: 80%;
+  
+  box-shadow: var(--euphonia-shadow-strong);
+  border: 1px solid var(--euphonia-border-modal);
+}
+
+.theme-selection-panel.visible {
+  display: flex;
+  left: -1.2rem;
+}
+
+.theme-option-button {
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background-color: #888; /* fallback */
+  transition: transform 0.2s, border-color 0.3s;
+}
+
+.theme-option-button:hover {
+  background-color: var(--euphonia-theme-option-hover-bg);
+}
+
+.theme-option-button.selected {
+  border-color: var(--euphonia-accent-primary-hover);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 1px var(--euphonia-accent-primary-transparent);
+}
+
+/* ====================== */
+/* == ÍCONO ESTÁTICO == */
+/* ====================== */
+.icon-theme-selector-static {
+  -webkit-mask-image: url('../img/themes.svg'); /* o el nombre correcto */
+  mask-image: url('../img/themes.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: var(--euphonia-theme-button-text);
+  width: 18px;
+  height: 18px;
+}
+ 
