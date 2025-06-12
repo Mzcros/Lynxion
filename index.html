@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphonia by Lynxion</title>
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-id-1 dark-mode">
+    <header class="app-header" id="app-header">
+        <div class="header-left">
+            <div class="logo" id="logo-container">
+                <img src="assets/img/logo.png" alt="Logo de Euphonia" id="logo-img">
+            </div>
+            <button class="search-icon" id="search-toggle" aria-label="Alternar barra de búsqueda" aria-expanded="false" aria-controls="search-bar-container">
+                <img src="assets/icons/search.svg" alt="" aria-hidden="true">
+            </button>
+        </div>
+        <div id="search-bar-container" class="search-bar-container">
+            <input type="text" placeholder="Buscar canción, álbum o artista..." class="search-input">
+            <button class="qr-scan-btn" aria-label="Escanear código QR">
+                <img src="assets/icons/qr-scan.svg" alt="" aria-hidden="true">
+            </button>
+        </div>
+        <div class="header-right">
+            <button id="mic-button" class="mic-icon" aria-label="Búsqueda por voz">
+                <img src="assets/icons/mic.svg" alt="" aria-hidden="true">
+            </button>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Alternar menú lateral" aria-expanded="false" aria-controls="side-menu">          
+                <div id="menu-icon" class="menu-icon">
+                    <img src="assets/icons/menu.svg" alt="" aria-hidden="true">
+                </div>
+                <div id="close-icon" class="menu-icon hidden">
+                    <img src="assets/icons/menu-close.svg" alt="" aria-hidden="true">
+                </div>                
+            </button>
+        </div>
+    </header>
+    
+    <aside id="side-menu" class="side-menu">
+        <div class="menu-section profile-section">
+            <div class="profile-header">
+                <img src="assets/img/avatar.png" alt="Avatar de Eleazer" class="avatar">
+                <div class="user-info">
+                    <span class="username">Eleazer</span>
+                    <span class="user-id">UsuarioID_123</span>
+                </div>
+                <div class="profile-actions">
+                    <button id="qr-code-button" class="qr-code-btn" aria-label="Mostrar código QR de tu perfil">
+                        <img src="assets/icons/qr-code.svg" alt="" aria-hidden="true">
+                    </button>
+                    <button id="profile-arrow-btn" class="profile-arrow-btn" aria-label="Ir a la sección de Perfil">
+                        <img src="assets/icons/derecha.svg" alt="" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="menu-section">
+            <a href="#" class="menu-item">
+                <img src="assets/icons/email.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span>Correos</span>
+                <span class="notification-badge"></span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/message-square.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span>Mensajes</span>
+                <span class="notification-badge"></span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/apagado.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span>Programar apagado</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/alarm.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span>Despertador musical</span>
+            </a>
+        </nav>
+        
+        <nav class="menu-section">
+            <a href="#" class="menu-item">
+                <img src="assets/icons/settings.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span>Configuración</span>
+            </a>
+            
+            <div class="menu-item">
+                <img src="assets/icons/themes.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span id="theme-toggle-label">Mostrar botón de temas</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-button-visibility-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="menu-item">
+                <img src="assets/icons/moon.svg" class="icon-svg" alt="" aria-hidden="true">
+                <span id="dark-mode-label">Modo claro</span>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <a href="#" class="menu-item"><img src="assets/icons/info.svg" class="icon-svg" alt="" aria-hidden="true"><span>Información</span></a>
+        </nav>
+        
+        <nav class="menu-section">           
+            <a href="#" class="menu-item"><span>Cambiar cuenta</span></a>
+            <a href="#" class="menu-item"><span>Cerrar sesión</span></a>
+        </nav>
+        
+        <footer class="menu-footer">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos del Servicio</a>
+        </footer>
+    </aside>
+    
+    <div id="qr-modal" class="modal-container">
+        <div class="modal-content">
+            <button id="modal-close-button" class="modal-close" aria-label="Cerrar ventana modal">&times;</button>
+            <p>Escanea para compartir tu perfil</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Usuario_Eleazer_Euphonia" alt="Código QR del perfil de Eleazer">
+        </div>
+    </div>
+    
+    <main id="main-content" class="main-content">
+        <div class="temas-container" style="position: fixed; bottom: 80px; right: 24px; z-index: 1006;">
+  <!-- Paleta de texto -->
+  <div id="paletaTexto" class="temas-opciones oculto">
+    <div class="color-opcion" style="background: #ffffff;" data-target="texto" data-color="#ffffff"></div>
+    <div class="color-opcion" style="background: #cccccc;" data-target="texto" data-color="#cccccc"></div>
+    <div class="color-opcion" style="background: #f4b340;" data-target="texto" data-color="#f4b340"></div>
+    <div class="color-opcion" style="background: #8b3dff;" data-target="texto" data-color="#8b3dff"></div>
+  </div>
+
+  <!-- Paleta secundaria -->
+  <div id="paletaSecundaria" class="temas-opciones oculto">
+    <div class="color-opcion" style="background: #ff4d4f;" data-target="secundario" data-color="#ff4d4f"></div>
+    <div class="color-opcion" style="background: #34c759;" data-target="secundario" data-color="#34c759"></div>
+    <div class="color-opcion" style="background: #0a84ff;" data-target="secundario" data-color="#0a84ff"></div>
+    <div class="color-opcion" style="background: #ff9f0a;" data-target="secundario" data-color="#ff9f0a"></div>
+    <div class="color-opcion" style="background: #bf5af2;" data-target="secundario" data-color="#bf5af2"></div>
+    <div class="color-opcion" style="background: #64d2ff;" data-target="secundario" data-color="#64d2ff"></div>
+  </div>
+
+  <div id="boton-temas" class="temas-boton">Color de Texto</div>
+  <div id="boton-secundario" class="temas-boton">Elementos Secundarios</div>
+</div>
+        
+        <section id="content-inicio" class="content-section active">
+            <h1>Contenido de Inicio</h1>
+            <p>Bienvenido a Euphonia. Usa el menú lateral para personalizar tu experiencia.</p>
+        </section>
+        <section id="content-biblioteca" class="content-section">
+            <h1>Mi Biblioteca</h1>
+            <p>Aquí aparecerán tus álbumes, playlists y canciones guardadas.</p>
+        </section>
+        <section id="content-favoritos" class="content-section">
+            <h1>Mis Favoritos</h1>
+            <p>Tus canciones favoritas en un solo lugar.</p>
+        </section>
+        <section id="content-perfil" class="content-section">
+            <h1>Mi Perfil</h1>
+            <p>Aquí puedes editar tu información de usuario y preferencias.</p>
+        </section>
+    </main>
+    
+    <nav class="euphonia-bottom-menu">
+        <div class="euphonia-menu-item euphonia-active" data-target="content-inicio">
+            <img src="assets/icons/home.svg" alt="Inicio" class="euphonia-icon">
+            <span class="euphonia-label">Inicio</span>
+        </div>
+        <div class="euphonia-menu-item" data-target="content-biblioteca">
+            <img src="assets/icons/library.svg" alt="Biblioteca" class="euphonia-icon">
+            <span class="euphonia-label">Biblioteca</span>
+        </div>
+        <div class="euphonia-menu-item euphonia-player-toggle">
+            <div class="euphonia-player-wrapper">
+                <img src="assets/icons/play-circle.svg" alt="Abrir reproductor" class="euphonia-icon euphonia-player-icon">
+            </div>
+        </div>
+        <div class="euphonia-menu-item" data-target="content-favoritos">
+            <img src="assets/icons/heart.svg" alt="Favoritos" class="euphonia-icon">
+            <span class="euphonia-label">Favoritos</span>
+        </div>
+        <div id="bottom-menu-profile" class="euphonia-menu-item" data-target="content-perfil">
+            <img src="assets/icons/user.svg" alt="Perfil" class="euphonia-icon">
+            <span class="euphonia-label">Perfil</span>
+        </div>
+    </nav>
+    
+    <div class="euphonia-music-player" id="euphonia-music-player">
+        <div class="euphonia-player-header">
+            <span>Canción actual</span>
+            <button class="euphonia-player-close" id="euphonia-player-close" aria-label="Cerrar reproductor">&times;</button>
+        </div>
+        <div class="euphonia-player-content">
+            <img src="assets/img/cover-art.png" alt="Portada del álbum" class="euphonia-cover-art">
+            <div class="euphonia-player-controls">
+                <div class="euphonia-song-info">
+                    <strong>Título</strong><br>
+                    <small>Artista</small>
+                </div>
+                <div class="euphonia-progress-bar">
+                    <input type="range" min="0" max="100" value="0" class="euphonia-seek-bar" aria-label="Barra de progreso de la canción">
+                </div>
+                <div class="euphonia-control-buttons">
+                    <button aria-label="Canción anterior"><img src="assets/icons/skip-back.svg" alt="" aria-hidden="true"></button>
+                    <button id="euphonia-play-pause" aria-label="Reproducir"><img src="assets/icons/play.svg" alt="" aria-hidden="true"></button>
+                    <button aria-label="Siguiente canción"><img src="assets/icons/skip-forward.svg" alt="" aria-hidden="true"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/themes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
